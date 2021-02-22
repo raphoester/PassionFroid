@@ -26,10 +26,6 @@
                     <label for="institutionelle">La photo a un but institutionnel</label><br><br>
                 </div>
                 <div>
-                    <input type ="checkbox" id="humain" name="humain" value="humain">
-                    <label for="">Une personne est sur la photo</label><br><br>
-                </div>
-                <div>
                     <label for ="credits">Propriétaire de la photo</label><br>
                     <input type ="text" id="credits" name ="credits" value=""><br><br>
                 </div>
