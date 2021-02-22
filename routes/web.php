@@ -13,16 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function () { //fonction login
     if(auth()->user() == null){
         return view('auth.login');
     }
-    
     else{
         return view('home');
     }
 });
 
+Route::get('/nvPhoto', [App\Http\Controllers\miseEnLigneController::class, 'form_mise_en_ligne']);
 
 Auth::routes();
 
