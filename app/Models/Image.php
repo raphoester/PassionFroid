@@ -15,16 +15,20 @@ class Image extends Model
      * @var array
      */
     protected $fillable = [
+        'url',
         'nom',
         'type', 
         'produit', 
         'humain', 
+        'hauteur', 
+        'largeur',
         'institutionnelle', 
         'format_hv', 
         'credits',
         'limite', 
         'cp', 
         'dateFinDroits', 
+        'droitsLimites',
         'tags'
 
     ];
