@@ -14,20 +14,20 @@
                     <input type ="text" id="type" name ="type" value=""><br><br>                                   
                 </div>
                 <div>
-                <label for="cp">Le produit est sur la photo</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    <input type ="checkbox" id="produit" name="produit" value="produit"><br><br>
+                    <input type ="checkbox" id="produit" name="produit" value="produit">
+                    <label for="produit">Le produit est sur la photo</label><br><br>
                 </div>
                 <div>
-                    <label for="humain">Une personne est sur la photo</label>&nbsp&nbsp&nbsp
-                    <input type ="checkbox" id="humain" name="humain" value="humain"><br><br>
+                    <input type ="checkbox" id="humain" name="humain" value="humain">
+                    <label for="humain">Une personne est sur la photo</label><br><br>
                 </div>
                 <div>
-                    <label for="institutionelle">La photo a un but institutionnel</label>&nbsp
-                    <input type ="checkbox" id="institutionelle" name="institutionelle" value="institutionelle"><br><br>
+                    <input type ="checkbox" id="institutionelle" name="institutionelle" value="institutionelle">
+                    <label for="institutionelle">La photo a un but institutionnel</label><br><br>
                 </div>
                 <div>
-                    <label for="">Une personne est sur la photo</label>&nbsp&nbsp&nbsp
-                    <input type ="checkbox" id="humain" name="humain" value="humain"><br><br>
+                    <input type ="checkbox" id="humain" name="humain" value="humain">
+                    <label for="">Une personne est sur la photo</label><br><br>
                 </div>
                 <div>
                     <label for ="credits">Propriétaire de la photo</label><br>
@@ -36,10 +36,9 @@
                 <div>
                 <p for="format">Format d'image :</label><br><br>
                     <label for="format-v">Vertical</label>&nbsp
-                    <input type="select">
-                    <input type ="radio" id="format-v" name="format-v" value="true"><br>
+                    <input type ="radio" id="format-v" name="format" value="true"><br>
                     <label for="format-h">Horizontal</label>
-                    <input type ="radio" id="format-h" name="format-h" value="false"><br>
+                    <input type ="radio" id="format-h" name="format" value="false"><br>
                 </div>
                 <div>
                     <label for ="tags">Tags :</label><br>
