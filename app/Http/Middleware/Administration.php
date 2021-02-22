@@ -16,6 +16,12 @@ class Administration
      */
     public function handle(Request $request, Closure $next)
     {
+        if (auth()->user() &&  auth()->user()->estAdmin == true) {
+            return $next($request);
+        }
+
+        flash("Vous n'êtes pas administrateur. Accès refusé.");
+        return redirect('/');
         return $next($request);
     }
 }
