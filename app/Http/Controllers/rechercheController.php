@@ -15,7 +15,8 @@ class rechercheController extends Controller
         return view ('images.montrer_image')->with('image', $image);
     }
 
-    function resultatsRecherche($donnees){
-        
+    function resultatsRecherche(){
+        // dd($donnees);
+        return view("client.resultat_recherche");
     }
 }

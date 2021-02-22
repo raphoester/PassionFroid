@@ -26,7 +26,7 @@ Route::get('/', function () { //fonction login
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/r', [App\Http\Controllers\rechercheController::class, 'pageRecherche']);
     Route::get('/i/{id_image}', [App\Http\Controllers\rechercheController::class, 'montrerImage']);
-    Route::post('/r', [App\Http\Controllers\rechercheController::class, "pageRecherche"]);
+    Route::post('/r', [App\Http\Controllers\rechercheController::class, "resultatsRecherche"]);
 });
 
 Route::group(['middleware' => 'admin'], function(){
