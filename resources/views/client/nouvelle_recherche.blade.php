@@ -36,6 +36,7 @@
                 <div>
                 <p for="format">Format d'image :</label><br><br>
                     <label for="format-v">Vertical</label>&nbsp
+                    <input type="select">
                     <input type ="radio" id="format-v" name="format-v" value="true"><br>
                     <label for="format-h">Horizontal</label>
                     <input type ="radio" id="format-h" name="format-h" value="false"><br>

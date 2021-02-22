@@ -14,4 +14,8 @@ class rechercheController extends Controller
         $image = \App\Models\Image::findOrFail($image);
         return view ('images.montrer_image')->with('image', $image);
     }
+
+    function resultatsRecherche($donnees){
+        
+    }
 }
