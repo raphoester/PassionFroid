@@ -58,9 +58,9 @@
                 <div>
                     <label for ="tags">Tags :</label><br>
                     <input type ="text" id="tags" name ="tags" value=""><br><br>
+                    <input type ="submit">
                 </div>
-                <input type ="submit">
-
+                
             </form>
         </div>
     </div>
