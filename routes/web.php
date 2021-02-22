@@ -22,7 +22,9 @@ Route::get('/', function () { //fonction login
     }
 });
 
-Route::get('/nvPhoto', [App\Http\Controllers\miseEnLigneController::class, 'form_mise_en_ligne']);
+Route::get('/nv', [App\Http\Controllers\miseEnLigneController::class, 'form_mise_en_ligne']);
+
+Route::post('/nv', [App\Http\Controllers\miseEnLigneController::class, 'telech_photo']);
 
 Auth::routes();
 

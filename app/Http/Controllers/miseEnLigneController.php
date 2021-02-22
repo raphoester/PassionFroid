@@ -9,4 +9,8 @@ class miseEnLigneController extends Controller
     function form_mise_en_ligne(){
         return view('admin.nvPhoto');
     }
+
+    function telech_photo(Request $requete){
+        dd($requete);
+    }
 }
