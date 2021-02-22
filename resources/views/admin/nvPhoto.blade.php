@@ -16,39 +16,51 @@
                     <input type ="text" id="type" name ="type" value=""><br><br>
                 </div>
                 <div class="champ-de-formulaire">
-                    <label for="product">Le produit est-il sur la photo ?</label><br>
+                    <p for="produit">Le produit est-il sur la photo ?</label><br><br>
                     <label for="produit-oui">Oui</label>&nbsp
-                    <input type ="radio" id="oui" name="product" value="true"><br>
-                    <label for="non">Non</label>
-                    <input type ="radio" id="non" name="product" value="false" required><br>
+                    <input type ="radio" id="produit-oui" name="produit" value="true"><br>
+                    <label for="produit-non">Non</label>
+                    <input type ="radio" id="produit-non" name="produit" value="false" required><br>
                 </div>
                 <div>
-
+                    <p for="humain">Une personne est-elle présente sur la photo ?</p>
+                    <label for="huamin-oui">Oui</label>&nbsp
+                    <input type ="radio" id="humain-oui" name="humain" value="true"><br>
+                    <label for="humain-non">Non</label>
+                    <input type ="radio" id="humain-non" name="humain" value="false"><br><br>
                 </div>
-                <p for="product">Une personne est-elle présente sur la photo ?</p><br>
-                <label for="oui">Oui</label>&nbsp
-                <input type ="radio" id="oui" name="humain" value="true"><br>
-                <label for="non">Non</label>
-                <input type ="radio" id="non" name="humain" value="false"><br>
-                <label for="product">Cette photo a-t-elle été prise dans un but institutionnel?</label><br>
-                <label for="oui">Oui</label>&nbsp
-                <input type ="radio" id="oui" name="institutionnelle" value="true"><br>
-                <label for="non">Non</label>
-                <input type ="radio" id="non" name="institutionelle" value="false"><br>
-                <label for ="credits">Détenteur de la photo :</label><br>
-                <input type ="text" id="credits" name ="credits" value=""><br><br>
-                <label for="product">Les droits d'utilisation de cette photo sont ils limités ?</label><br>
-                <label for="oui">Oui</label>&nbsp
-                <input type ="radio" id="oui" name="droitsLimites" value="true"><br>
-                <label for="non">Non</label>
-                <input type ="radio" id="non" name="droitsLimites" value="false"><br>
-                <label for="cp">Image sous copyright</label>&nbsp
-                <input type ="checkbox" id="cp" name="cp" value="copyright"><br>
-                <label for ="datefindroits">Date de fin de droits (JJ/MM/YYYY) :</label><br>
-                <input type ="date" id="datefindroits" name ="datefindroits" value=""><br><br>
-                <label for ="tags">Tags :</label><br>
-                <input type ="text" id="tags" name ="tags" value=""><br><br>
+                <div>
+                    <p for="institutionelle">Cette photo a-t-elle été prise dans un but institutionnel?</label><br><br>
+                    <label for="institutionelle-oui">Oui</label>&nbsp
+                    <input type ="radio" id="institutionelle-oui" name="institutionnelle" value="true"><br>
+                    <label for="institutionelle-non">Non</label>   
+                    <input type ="radio" id="institutionelle-non" name="institutionelle" value="false"><br>
+                </div>
+                <div>
+                    <label for ="credits">Détenteur de la photo :</label><br>
+                    <input type ="text" id="credits" name ="credits" value=""><br><br>
+                </div>
+                <div>
+                    <p for="droits">Les droits d'utilisation de cette photo sont ils limités ?</label><br><br>
+                    <label for="droitsLimites-oui">Oui</label>&nbsp
+                    <input type ="radio" id="droitsLimite-oui" name="droitsLimites" value="true"><br>
+                    <label for="droitsLimites-non">Non</label>
+                    <input type ="radio" id="droitsLimites-non" name="droitsLimites" value="false"><br>
+                </div>
+                <div>    
+                    <label for="cp">Image sous copyright</label>&nbsp
+                    <input type ="checkbox" id="cp" name="cp" value="copyright"><br>
+                </div>
+                <div>    
+                    <label for ="datefindroits">Date de fin de droits :</label><br>
+                    <input type ="date" id="datefindroits" name ="datefindroits" value=""><br><br>
+                </div>
+                <div>
+                    <label for ="tags">Tags :</label><br>
+                    <input type ="text" id="tags" name ="tags" value=""><br><br>
+                </div>
                 <input type ="submit">
+
             </form>
         </div>
     </div>
