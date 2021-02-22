@@ -5,7 +5,8 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <h1>Mettre en ligne une photo</h1>
-            <form method="POST">
+            <form method="POST" enctype="multipart/form-data">
+                
                 @csrf
                 <div>
                     <label for ="nom">Nom :</label><br>
@@ -16,21 +17,21 @@
                     <input type ="text" id="type" name ="type" value=""><br><br>
                 </div>
                 <div class="champ-de-formulaire">
-                    <p for="produit">Le produit est-il sur la photo ?</label><br><br>
+                    <p>Le produit est-il sur la photo ?</label><br><br>
                     <label for="produit-oui">Oui</label>&nbsp
                     <input type ="radio" id="produit-oui" name="produit" value="true"><br>
                     <label for="produit-non">Non</label>
                     <input type ="radio" id="produit-non" name="produit" value="false" required><br>
                 </div>
                 <div>
-                    <p for="humain">Une personne est-elle présente sur la photo ?</p>
+                    <p>Une personne est-elle présente sur la photo ?</p>
                     <label for="huamin-oui">Oui</label>&nbsp
                     <input type ="radio" id="humain-oui" name="humain" value="true"><br>
                     <label for="humain-non">Non</label>
                     <input type ="radio" id="humain-non" name="humain" value="false"><br><br>
                 </div>
                 <div>
-                    <p for="institutionelle">Cette photo a-t-elle été prise dans un but institutionnel?</label><br><br>
+                    <p>Cette photo a-t-elle été prise dans un but institutionnel?</label><br><br>
                     <label for="institutionelle-oui">Oui</label>&nbsp
                     <input type ="radio" id="institutionelle-oui" name="institutionnelle" value="true"><br>
                     <label for="institutionelle-non">Non</label>   
@@ -41,7 +42,7 @@
                     <input type ="text" id="credits" name ="credits" value=""><br><br>
                 </div>
                 <div>
-                    <p for="droits">Les droits d'utilisation de cette photo sont ils limités ?</label><br><br>
+                    <p>Les droits d'utilisation de cette photo sont ils limités ?</label><br><br>
                     <label for="droitsLimites-oui">Oui</label>&nbsp
                     <input type ="radio" id="droitsLimite-oui" name="droitsLimites" value="true"><br>
                     <label for="droitsLimites-non">Non</label>
@@ -53,14 +54,23 @@
                 </div>
                 <div>    
                     <label for ="datefindroits">Date de fin de droits :</label><br>
-                    <input type ="date" id="datefindroits" name ="datefindroits" value=""><br><br>
+                    <input type ="date" id="datefindroits" name ="dateFinDroits" value=""><br><br>
                 </div>
                 <div>
                     <label for ="tags">Tags :</label><br>
                     <input type ="text" id="tags" name ="tags" value=""><br><br>
                     <input type ="submit">
                 </div>
-                
+                <div>
+                    <label for="image">Déposez votre fichier...</label><br>
+                    <input required type="file" name="image" id="image" accept="image/*">
+                </div>
+                <br>
+                <div>
+                    <input type ="submit">
+                </div>
+
+
             </form>
         </div>
     </div>
