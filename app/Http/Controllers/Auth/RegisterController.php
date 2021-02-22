@@ -64,17 +64,18 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        if($data['password_admin'] == env('MDP_ADMIN', "falsefalsefalsefalsefalsefalsefalsefalse"))
+        $data['estAdmin'] = false;
+        if(array_key_exists('password_admin', $data) && $data['password_admin'] == env('MDP_ADMIN', md5(rand())))
         {
             $data['estAdmin'] = true;
         }
+
         unset($data['password_admin']);
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'estAdmin' =>$data['estAdmin'],
             'password' => Hash::make($data['password']),
-            
         ]);
     }
 }
