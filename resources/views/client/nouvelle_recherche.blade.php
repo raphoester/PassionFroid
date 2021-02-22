@@ -17,10 +17,10 @@
                 </div>
                 <div class="champ-de-formulaire">
                     <label for="product">Le produit est-il sur la photo ?</label><br>
-                    <label for="product-oui">Oui</label>&nbsp
-                    <input type ="radio" id="oui" name="produit" value="true"><br>
+                    <label for="produit-oui">Oui</label>&nbsp
+                    <input type ="radio" id="oui" name="product" value="true"><br>
                     <label for="non">Non</label>
-                    <input type ="radio" id="non" name="produit" value="false" required><br>
+                    <input type ="radio" id="non" name="product" value="false" required><br>
                 </div>
                 <div>
 

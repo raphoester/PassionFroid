@@ -18,18 +18,23 @@ Route::get('/', function () { //fonction login
         return view('auth.login');
     }
     else{
-        return view('home');
+        return view('tableauDeBord');
     }
 });
 
-Route::get('/nv', [App\Http\Controllers\miseEnLigneController::class, 'form_mise_en_ligne']);
 
-Route::post('/nv', [App\Http\Controllers\miseEnLigneController::class, 'telech_photo']);
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/r', [App\Http\Controllers\rechercheController::class, 'pageRecherche']);
+});
+
+Route::group(['middleware' => 'admin'], function(){
+    Route::get('/nv', [App\Http\Controllers\miseEnLigneController::class, 'form_mise_en_ligne']);
+    Route::post('/nv', [App\Http\Controllers\miseEnLigneController::class, 'telech_photo']);
+});
+
+
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
