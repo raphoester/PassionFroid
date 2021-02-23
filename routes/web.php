@@ -30,8 +30,12 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 Route::group(['middleware' => 'admin'], function(){
-    Route::get('/nv', [App\Http\Controllers\miseEnLigneController::class, 'form_mise_en_ligne']);
+    Route::get('/nv', [App\Http\Controllers\miseEnLigneController::class, 'form_mise_en_ligne_img']);
     Route::post('/nv', [App\Http\Controllers\miseEnLigneController::class, 'telech_photo']);
+    Route::get('/nvg', [App\Http\Controllers\miseEnLigneController::class, 'form_mise_en_ligne_dossier']);
+    Route::post('/nvg', [App\Http\Controllers\miseEnLigneController::class, 'telech_dossier']);
+    Route::get('/modif/{id_image}', [App\Http\Controllers\editionImageController::class, 'form_edit_image']);
+    Route::post('/modif/{id_image}', [App\Http\Controllers\editionImageController::class, 'maj_image']);
 });
 
 

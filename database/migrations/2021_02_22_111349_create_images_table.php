@@ -16,17 +16,17 @@ class CreateImagesTable extends Migration
         Schema::create('images', function (Blueprint $table) {
             $table->id();
             $table->string('url');
-            $table->string('nom');
-            $table->string('type');
-            $table->boolean('produit');
-            $table->boolean('humain');
-            $table->boolean('institutionnelle');
+            $table->string('nom')->nullable();
+            $table->string('type')->nullable();
+            $table->boolean('produit')->nullable();
+            $table->boolean('humain')->nullable();
+            $table->boolean('institutionnelle')->nullable();
             $table->float('hauteur');
             $table->float('largeur');
-            $table->string('credits');
-            $table->boolean('droitsLimites');
-            $table->dateTime('dateFinDroits');
-            $table->string('tags');
+            $table->string('credits')->nullable();
+            $table->boolean('droitsLimites')->nullable();
+            $table->dateTime('dateFinDroits')->nullable();
+            $table->string('tags')->nullable();
             $table->timestamps();
         });
     }
