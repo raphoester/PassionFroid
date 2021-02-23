@@ -15,17 +15,17 @@
                     $liste_tags = explode(",",  $image->tags);
                 @endphp
                     @foreach($liste_tags as $tag)
-                        <p style="display: inline; font-size: larger;"><span class="badge badge-primary">{{$tag}}</span></p>
+                        <p style="display: inline; font-size: larger;"><span class="badge badge-primary"><a style="text-decoration: none; color: white;" href="/tag/{{$tag}}">{{$tag}}</a></span></p>
                     @endforeach
                 </div>
                 <br>
             </div>
             <div>
                 <div class="row">
-                    <div class="col-md-6 how-img">
-                        <a href="{{$image->url}}"><img src="{{$image->url}}" class="img-fluid" alt=""/></a>
+                    <div class="col-md-6 row-img">
+                        <a href="{{$image->url}}"><img src="{{$image->url}}" class="img-fluid" style="object-fit: cover;" alt=""/></a>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <br>
                         <ul class="list-group" style="float: left; min-width: 500px;">
                             <li class="list-group-item">Nom : {{$image->nom}}</li>

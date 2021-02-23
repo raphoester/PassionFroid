@@ -19,6 +19,14 @@ class rechercheController extends Controller
         $images = \App\Models\Image::all()->sortByDesc("created_at");
         return view ('images.explorer_images')->with('images', $images);
     }
+
+    function rechercheParTag($tag){
+        $resultats = DB::table('images');
+        $resultats->where('tags', "LIKE", "%".$tag."%");
+        $resultats->select('images.*')->orderByDesc('created_at');
+        $resultats = $resultats->get();
+        return view('client.resultat_recherche')->with('resultats', $resultats);
+    }
     
     function resultatsRecherche(Request $requete){
         // dd($requete);

@@ -28,6 +28,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/i/{id_image}', [App\Http\Controllers\rechercheController::class, 'montrerImage']);
     Route::post('/r', [App\Http\Controllers\rechercheController::class, "resultatsRecherche"]);
     Route::get('/explo', [App\Http\Controllers\rechercheController::class, 'imagesAleatoires']);
+    Route::get('/tag/{tag}',  [App\Http\Controllers\rechercheController::class, 'rechercheParTag']);
 });
 
 Route::group(['middleware' => 'admin'], function(){
