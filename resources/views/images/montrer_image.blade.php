@@ -13,8 +13,9 @@
                         <img src="{{$image->url}}" class="img-fluid" alt=""/>
                     </div>
                     <div class="col-md-6">
-                        <h3>{{$image->nom}}</h3>
+                        <h2>{{$image->nom}}</h2>
                         <h4 class="subheading">{{$image->type}}</h4>
+                        <br>
                         <ul class="list-group">
                             <li class="list-group-item">Contient un produit : {{$image->produit}}</li>
                             <li class="list-group-item">Personne représentée : {{$image->humain}}</li>
@@ -24,9 +25,6 @@
                             <li class="list-group-item">Droits limités : {{$image->droitsLimites}}</li>
                             <li class="list-group-item">Date de fin des droits : {{$image->dateFinDroits}}</li>
                             <li class="list-group-item">Mise en ligne le : {{$image->created_at}}</li>
-
-
-
                         </ul>
                     </div>
                 </div>

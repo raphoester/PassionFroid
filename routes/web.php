@@ -26,12 +26,14 @@ Route::get('/', function () { //fonction login
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/r', [App\Http\Controllers\rechercheController::class, 'pageRecherche']);
     Route::get('/i/{id_image}', [App\Http\Controllers\rechercheController::class, 'montrerImage']);
+    Route::post('/r', [App\Http\Controllers\rechercheController::class, "resultatsRecherche"]);
 });
 
 Route::group(['middleware' => 'admin'], function(){
     Route::get('/nv', [App\Http\Controllers\miseEnLigneController::class, 'form_mise_en_ligne']);
     Route::post('/nv', [App\Http\Controllers\miseEnLigneController::class, 'telech_photo']);
 });
+
 
 
 

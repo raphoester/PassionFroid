@@ -5,6 +5,8 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <h1>Rechercher une photo</h1>
+            <form action="" method="POST">
+                @csrf
                 <div>
                     <label for ="nom">Nom :</label><br>
                     <input type ="text" id="nom" name ="nom" value=""><br><br>
@@ -41,6 +43,7 @@
                     <input type ="text" id="tags" name ="tags" value=""><br><br>
                     <input type ="submit" value="Rechercher">
                 </div>
+            </form>
         </div>
     </div>
 </div>
