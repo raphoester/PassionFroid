@@ -36,6 +36,7 @@ Route::group(['middleware' => 'admin'], function(){
     Route::post('/nvg', [App\Http\Controllers\miseEnLigneController::class, 'telech_dossier']);
     Route::get('/modif/{id_image}', [App\Http\Controllers\editionImageController::class, 'form_edit_image']);
     Route::post('/modif/{id_image}', [App\Http\Controllers\editionImageController::class, 'maj_image']);
+    Route::get('suppr/{id}',  [App\Http\Controllers\editionImageController::class, 'supprImage']);
 });
 
 

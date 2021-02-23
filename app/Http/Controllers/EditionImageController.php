@@ -30,4 +30,17 @@ class EditionImageController extends Controller
         flash('Les informations de l\'image ont bien été mises à jour.');
         return redirect("/i/".$image);
     }
+
+    function supprImage($id){
+        
+        if(\App\Models\Image::where('id',$id)->delete())
+        {
+            flash("L'image a bien été supprimée.");
+        }
+        else{
+            flash("L'image n'a pas pu être supprimée.");
+        }
+        return redirect('/');
+
+    }
 }

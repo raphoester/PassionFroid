@@ -17,7 +17,7 @@
                     <input type ="text" id="type" name ="type" value=""><br><br>
                 </div>
                 <div class="champ-de-formulaire">
-                    <p>Le produit est-il sur la photo ?</p><br><br>
+                    <p>Le produit est-il sur la photo ?</p>
                     <label for="produit-oui">Oui</label>&nbsp
                     <input type ="radio" id="produit-oui" name="produit" value="true"><br>
                     <label for="produit-non">Non</label>
@@ -57,7 +57,7 @@
                     <input type ="date" id="datefindroits" name ="dateFinDroits" value=""><br><br>
                 </div>
                 <div>
-                    <label for ="tags">Tags :</label><br>
+                    <label for ="tags">Tags (séparés par une virgule) :</label><br>
                     <input type ="text" id="tags" name ="tags" value=""><br><br>
                     <input type ="submit">
                 </div>

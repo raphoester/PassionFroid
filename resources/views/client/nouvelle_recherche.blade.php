@@ -39,7 +39,7 @@
                     <label for="format-h">Horizontal</label>
                 </div>
                 <div>
-                    <label for ="tags">Tags :</label><br>
+                    <label for ="tags">Tags (séparés par une virgule) :</label><br>
                     <input type ="text" id="tags" name ="tags"><br><br>
                     <input type ="submit" value="Rechercher">
                 </div>

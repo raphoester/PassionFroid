@@ -81,7 +81,7 @@
                     <input type ="text" id="credits" name ="credits" value="{{$image->proprietaire}}"><br><br>
                 </div>
                 <div>
-                    <p>Les droits d'utilisation de cette photo sont ils limités ?</label>
+                    <p>Les droits d'utilisation de cette photo sont ils limités ?</p>
                     @php
                         if($image->institutionnelle == true)
                         {
@@ -117,7 +117,7 @@
                     <input type ="date" id="datefindroits" name ="dateFinDroits" value="{{$image->dateFinDroits}}"><br><br>
                 </div>
                 <div>
-                    <label for ="tags">Tags :</label><br>
+                    <label for ="tags">Tags (séparés par une virgule) :</label><br>
                     <input type ="text" id="tags" name ="tags" value="{{$image->tags}}">
                 </div>
                 <br>
