@@ -12,22 +12,25 @@
     <h1>Résultats de la recherche</h1>
   </div>
   <br>
-  @foreach ($resultats as $resultat)
 
-  <div class="media">
-    
-    <div class="fav-box"><i class="fa fa-heart-o" aria-hidden="true"></i>
-    </div>
-    
-    <img class="d-flex align-self-start" src="{{$resultat->url}}"
-        alt="Generic placeholder image">
-    <div class="media-body pl-3">
-      <div class="price">{{$resultat->nom}}<small>{{$resultat->type}}</small></div>
-      <div class="stats"><span>👤 {{$resultat->credits}}</span></div>
-      <a href="/i/{{$resultat->id}}" style="float: right; margin-right: 50px;">Plus de détails </a>
-    </div>
+
+  <div class="row g-2">
+    @foreach ($resultats as $resultat)
+      <div class="col-6" style="width: 100px; margin-bottom: 20px;">
+        <div class="p-3 border bg-light" style="display: flex;">
+          <div style="margin-right: 100px;">
+            <img style="width: 200px; object-fit: cover; height: 200px;" class="d-flex align-self-start" src="{{$resultat->url}}">
+          </div>
+          <div style="margin-top : 30px;">
+            <h4>{{$resultat->nom ?? "Pas de titre"}}</h4>
+            <p><a href="/i/{{$resultat->id}}" style="">Détails</a></p>
+          </div>
+        </div>
+        
+      </div>
+    @endforeach
   </div>
-  @endforeach
+  
 </div>
 
 

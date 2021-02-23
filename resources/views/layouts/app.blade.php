@@ -45,7 +45,7 @@
                             <a class="nav-link" href="{{url('/r')}}">{{ __('Effectuer une recherche') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('/explo')}}">{{ __('Exploration aléatoire') }}</a>
+                            <a class="nav-link" href="{{url('/explo')}}">{{ __('Dernières images') }}</a>
                         </li>
 
                     </ul>

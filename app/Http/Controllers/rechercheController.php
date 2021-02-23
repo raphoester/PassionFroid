@@ -16,7 +16,7 @@ class rechercheController extends Controller
     }
 
     function imagesAleatoires(){
-        $images = \App\Models\Image::inRandomOrder()->get();
+        $images = \App\Models\Image::all()->sortByDesc("created_at");
         return view ('images.explorer_images')->with('images', $images);
     }
     

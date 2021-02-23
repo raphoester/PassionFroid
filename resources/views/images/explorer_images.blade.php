@@ -12,22 +12,22 @@
     <h1>Explorer la réserve d'images</h1>
   </div>
   <br>
-  @foreach ($images as $image)
-
-  <div class="media">
-    
-    <div class="fav-box"><i class="fa fa-heart-o" aria-hidden="true"></i>
-    </div>
-    
-    <img class="d-flex align-self-start" src="{{$image->url}}"
-        alt="Generic placeholder image">
-    <div class="media-body pl-3">
-      <div class="price">{{$image->nom}}<small>{{$image->type}}</small></div>
-      <div class="stats"><span>👤 {{$image->credits}}</span></div>
-      <a href="/i/{{$image->id}}" style="float: right; margin-right: 50px;">Plus de détails </a>
-    </div>
+  <div class="row g-2">
+    @foreach ($images as $resultat)
+      <div class="col-6" style="width: 100px; margin-bottom: 20px;">
+        <div class="p-3 border bg-light" style="display: flex;">
+          <div style="margin-right: 100px;">
+            <img style="width: 200px; object-fit: cover; height: 200px;" class="d-flex align-self-start" src="{{$resultat->url}}">
+          </div>
+          <div style="margin-top : 30px;">
+            <h4>{{$resultat->nom ?? "Pas de titre"}}</h4>
+            <p><a href="/i/{{$resultat->id}}" style="">Détails</a></p>
+          </div>
+        </div>
+        
+      </div>
+    @endforeach
   </div>
-  @endforeach
 </div>
 
 

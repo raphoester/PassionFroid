@@ -39,8 +39,6 @@
                             <li class="list-group-item">Date de fin des droits : {{$image->dateFinDroits}}</li>
                             <li class="list-group-item">Mise en ligne le : {{$image->created_at}}</li>
                         </ul>
-
-
                     </div>
                 </div>
             </div>
