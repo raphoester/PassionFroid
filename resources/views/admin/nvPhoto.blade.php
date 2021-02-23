@@ -17,7 +17,7 @@
                     <input type ="text" id="type" name ="type" value=""><br><br>
                 </div>
                 <div class="champ-de-formulaire">
-                    <p>Le produit est-il sur la photo ?</label><br><br>
+                    <p>Le produit est-il sur la photo ?</p><br><br>
                     <label for="produit-oui">Oui</label>&nbsp
                     <input type ="radio" id="produit-oui" name="produit" value="true"><br>
                     <label for="produit-non">Non</label>
@@ -69,8 +69,6 @@
                 <div>
                     <input type ="submit">
                 </div>
-
-
             </form>
         </div>
     </div>
