@@ -21,7 +21,7 @@
           </div>
           <div style="margin-top : 30px;">
             <h4>{{$resultat->nom ?? "Pas de titre"}}</h4>
-            <p><a href="/i/{{$resultat->id}}" style="">Détails</a></p>
+            <p><a href="/i/{{$resultat->id}}">Détails</a></p>
           </div>
         </div>
         
