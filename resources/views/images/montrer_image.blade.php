@@ -23,7 +23,7 @@
             <div>
                 <div class="row">
                     <div class="col-md-6 how-img">
-                        <img src="{{$image->url}}" class="img-fluid" alt=""/>
+                        <a href="{{$image->url}}"><img src="{{$image->url}}" class="img-fluid" alt=""/></a>
                     </div>
                     <div class="col-md-6">
                         <br>

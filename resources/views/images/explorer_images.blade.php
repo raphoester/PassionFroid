@@ -9,22 +9,22 @@
 <link rel="stylesheet" href="/css/recherche.css">
 <div class="container">
   <div class="title">
-    <h1>Résultats de la recherche</h1>
+    <h1>Explorer la réserve d'images</h1>
   </div>
   <br>
-  @foreach ($resultats as $resultat)
+  @foreach ($images as $image)
 
   <div class="media">
     
     <div class="fav-box"><i class="fa fa-heart-o" aria-hidden="true"></i>
     </div>
     
-    <img class="d-flex align-self-start" src="{{$resultat->url}}"
+    <img class="d-flex align-self-start" src="{{$image->url}}"
         alt="Generic placeholder image">
     <div class="media-body pl-3">
-      <div class="price">{{$resultat->nom}}<small>{{$resultat->type}}</small></div>
-      <div class="stats"><span>👤 {{$resultat->credits}}</span></div>
-      <a href="/i/{{$resultat->id}}" style="float: right; margin-right: 50px;">Plus de détails </a>
+      <div class="price">{{$image->nom}}<small>{{$image->type}}</small></div>
+      <div class="stats"><span>👤 {{$image->credits}}</span></div>
+      <a href="/i/{{$image->id}}" style="float: right; margin-right: 50px;">Plus de détails </a>
     </div>
   </div>
   @endforeach

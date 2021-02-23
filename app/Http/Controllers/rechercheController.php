@@ -14,6 +14,11 @@ class rechercheController extends Controller
         $image = \App\Models\Image::findOrFail($image);
         return view ('images.montrer_image')->with('image', $image);
     }
+
+    function imagesAleatoires(){
+        $images = \App\Models\Image::inRandomOrder()->get();
+        return view ('images.explorer_images')->with('images', $images);
+    }
     
     function resultatsRecherche(Request $requete){
         // dd($requete);
@@ -73,7 +78,9 @@ class rechercheController extends Controller
             }
         }
 
-        $resultats->select('images.*');
+
+
+        $resultats->select('images.*')->orderByDesc('created_at');
         $resultats = $resultats->get();
         return view("client.resultat_recherche")->with('resultats', $resultats);
     }

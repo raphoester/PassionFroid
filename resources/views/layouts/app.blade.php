@@ -44,6 +44,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('/r')}}">{{ __('Effectuer une recherche') }}</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('/explo')}}">{{ __('Exploration aléatoire') }}</a>
+                        </li>
+
                     </ul>
 
                     <!-- Right Side Of Navbar -->

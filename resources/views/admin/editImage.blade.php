@@ -57,7 +57,7 @@
                     @endphp
                 </div>
                 <div>
-                    <p>Cette photo a-t-elle été prise dans un but institutionnel?</p>
+                    <p>Cette photo a-t-elle été prise dans un but institutionnel ?</p>
                     @php
                         if($image->institutionnelle == true)
                         {
@@ -78,7 +78,7 @@
                 </div>
                 <div>
                     <label for ="credits">Détenteur de la photo :</label><br>
-                    <input type ="text" id="credits" name ="credits" value="{{$image->proprietaire}}"><br><br>
+                    <input type ="text" id="credits" name ="credits" value="{{$image->credits}}"><br><br>
                 </div>
                 <div>
                     <p>Les droits d'utilisation de cette photo sont ils limités ?</p>
