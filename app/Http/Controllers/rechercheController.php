@@ -63,7 +63,7 @@ class rechercheController extends Controller
         else if ($requete->has("horizontal") && $requete->horizontal == 'true')
         {
             $resultats->where('largeur', ">=", "hauteur");
-        } 
+        }
 
         //si on veut une image verticale 
         else if ($requete->has("vertical") && $requete->vertical == 'true')
