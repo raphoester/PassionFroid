@@ -78,7 +78,12 @@ class rechercheController extends Controller
             }
         }
 
+        if($requete->has('tags_a_exclure') && $requete->tags_a_exclure != null){
 
+            foreach(explode(",", $requete->tags_a_exclure) as $tag_ex){
+                $resultats->where('tags', "NOT LIKE", "%".$tag_ex."%")->orWhere('tags', null); 
+            }
+        }
 
         $resultats->select('images.*')->orderByDesc('created_at');
         $resultats = $resultats->get();

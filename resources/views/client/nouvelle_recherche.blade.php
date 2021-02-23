@@ -41,6 +41,13 @@
                 <div>
                     <label for ="tags">Tags (séparés par une virgule) :</label><br>
                     <input type ="text" id="tags" name ="tags"><br><br>
+                    
+                </div>
+                <div>
+                    <label for ="tags_a_exclure">Tags à exclure(séparés par une virgule) :</label><br>
+                    <input type ="text" id="tags_a_exclure" name ="tags_a_exclure"><br><br>
+                </div>
+                <div>
                     <input type ="submit" value="Rechercher">
                 </div>
             </form>
